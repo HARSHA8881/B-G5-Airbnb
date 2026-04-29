@@ -1,20 +1,20 @@
-# 🏙️ NYC Airbnb Analytics Engine
+# NYC Airbnb Analytics Engine
 
 > End-to-end data pipeline · Exploratory Data Analysis · Statistical Inference · Tableau Intelligence
 
-## 📌 Overview
+## Overview
 
 This project delivers a **data analytics pipeline** for the NYC Airbnb ecosystem — transforming raw listing data into actionable business intelligence for hosts, investors, and platform strategists.
 
 **What's inside:**
-- ⚙️ Robust ETL pipeline built in Python
-- 📊 Deep Exploratory Data Analysis (EDA)
-- 📈 Statistical inference & hypothesis testing
-- 📉 Interactive Tableau dashboards
+- Robust ETL pipeline built in Python
+- Deep Exploratory Data Analysis (EDA)
+- Statistical inference & hypothesis testing
+- Interactive Tableau dashboards
 
 ---
 
-## 🧠 Problem Context
+## Problem Context
 
 The NYC Airbnb market is highly fragmented, over-saturated in prime neighborhoods, and lacks structured analytical insights. This leads to suboptimal pricing decisions, poor location strategies, and missed revenue opportunities.
 
@@ -26,7 +26,7 @@ The NYC Airbnb market is highly fragmented, over-saturated in prime neighborhood
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 nyc-airbnb-analytics/
@@ -46,7 +46,7 @@ nyc-airbnb-analytics/
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Layer | Tools |
 |-------|-------|
@@ -58,15 +58,15 @@ nyc-airbnb-analytics/
 
 ---
 
-## 🔄 ETL Pipeline
+## ETL Pipeline
 
-### 🧹 Data Cleaning
+### Data Cleaning
 - Standardized column naming conventions
 - Missing value imputation (median-based)
 - Outlier capping at the 99th percentile
 - Duplicate removal and data type corrections
 
-### ⚡ Feature Engineering
+### Feature Engineering
 
 | Feature | Description |
 |---------|-------------|
@@ -77,9 +77,9 @@ nyc-airbnb-analytics/
 
 ---
 
-##  Key Findings
+## Key Findings
 
-###  Market
+### Market
 - Manhattan + Brooklyn account for **~85% of supply**
 - Queens is an emerging **high-growth opportunity zone**
 
@@ -97,7 +97,7 @@ nyc-airbnb-analytics/
 
 ---
 
-##  Statistical Analysis
+## Statistical Analysis
 
 ### Hypothesis Testing
 **Instant Booking vs. Review Rate** — Result: No significant difference detected.
@@ -123,15 +123,15 @@ Three dashboards provide layered business intelligence:
 
 | Priority | Action | Expected Impact |
 |----------|--------|-----------------|
-| 🔴 High | Enable Instant Booking incentives | +10–15% conversions |
-| 🔴 High | Expand supply in Queens | Market growth opportunity |
-| 🟡 Medium | Promote flexible cancellation policies | Lower vacancy rates |
-| 🟡 Medium | Target the budget price segment | Volume-driven bookings |
-| 🟡 Medium | Identify & improve low-rated hosts | Better platform quality |
+| High | Enable Instant Booking incentives | +10–15% conversions |
+| High | Expand supply in Queens | Market growth opportunity |
+| Medium | Promote flexible cancellation policies | Lower vacancy rates |
+| Medium | Target the budget price segment | Volume-driven bookings |
+| Medium | Identify & improve low-rated hosts | Better platform quality |
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 - Static dataset — no real-time updates
 - No actual booking transaction data
@@ -140,16 +140,16 @@ Three dashboards provide layered business intelligence:
 
 ---
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
-- 🤖 ML-based price prediction (XGBoost / LightGBM)
-- 📡 Real-time dashboard integration via API
-- 🧠 NLP sentiment analysis on guest reviews
-- 📊 Regulatory impact modeling
+- ML-based price prediction (XGBoost / LightGBM)
+- Real-time dashboard integration via API
+- NLP sentiment analysis on guest reviews
+- Regulatory impact modeling
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ```bash
 # Clone the repository
@@ -168,23 +168,23 @@ jupyter notebook
 
 ---
 
-## 📂 Data Source
+## Data Source
 
 Data sourced from [Inside Airbnb](http://insideairbnb.com/) — an independent, non-commercial project providing public Airbnb listing data.
 
 ---
 
-## 📎 Full Report
+## Full Report
 
 The complete analytical report is available here:
-[📄 View Full Report](https://docs.google.com/document/d/1KZJvpFIPW3gtA3Q9yimsABRNF6iLnz477pQkHIO0VfI/edit?usp=sharing)
+[View Full Report](https://docs.google.com/document/d/1KZJvpFIPW3gtA3Q9yimsABRNF6iLnz477pQkHIO0VfI/edit?usp=sharing)
 
 ---
 
-## 📬 Contact
+## Contact
 
 Have questions or want to collaborate? Feel free to open an issue or reach out via GitHub.
 
 ---
 
-*Built with 🧡 using Python, Pandas, and Tableau — transforming raw data into strategic decisions.*
+*Built with Python, Pandas, and Tableau — transforming raw data into strategic decisions.*
