@@ -202,7 +202,7 @@ B-G5-Airbnb/
 
 ---
 
-## 🚀 Future Scope
+##  Future Scope
 
 - **Real-Time Dashboard:** Connect Tableau to a live Inside Airbnb API feed.
 - **Predictive Pricing Model:** XGBoost / Random Forest for optimal nightly price prediction.
