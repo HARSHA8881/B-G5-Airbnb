@@ -1,149 +1,190 @@
-🏙️ NYC Airbnb Analytics Engine
-End-to-End Data Pipeline • EDA • Statistical Insights • Tableau Intelligence
-🚀 Project Overview
+# 🏙️ NYC Airbnb Analytics Engine
 
-This project delivers a full-stack data analytics pipeline for the NYC Airbnb ecosystem — transforming raw listing data into actionable business intelligence.
+> End-to-end data pipeline · Exploratory Data Analysis · Statistical Inference · Tableau Intelligence
 
-It combines:
+## 📌 Overview
 
-⚙️ Robust ETL pipeline (Python)
-📊 Deep Exploratory Data Analysis
-📈 Statistical inference
-📉 Interactive Tableau dashboards
+This project delivers a **data analytics pipeline** for the NYC Airbnb ecosystem — transforming raw listing data into actionable business intelligence for hosts, investors, and platform strategists.
 
-The goal: enable data-driven decisions for hosts, investors, and platform strategists.
+**What's inside:**
+- ⚙️ Robust ETL pipeline built in Python
+- 📊 Deep Exploratory Data Analysis (EDA)
+- 📈 Statistical inference & hypothesis testing
+- 📉 Interactive Tableau dashboards
 
-🧠 Problem Context
+---
 
-The NYC Airbnb market is:
+## 🧠 Problem Context
 
-Highly fragmented
-Over-saturated in prime locations
-Lacking structured insights
+The NYC Airbnb market is highly fragmented, over-saturated in prime neighborhoods, and lacks structured analytical insights. This leads to suboptimal pricing decisions, poor location strategies, and missed revenue opportunities.
 
-This leads to:
+**This project addresses:**
+- Identifying high-demand vs. oversupplied neighborhoods
+- Analyzing pricing dynamics and revenue drivers
+- Evaluating guest satisfaction patterns
+- Delivering clear, data-backed strategic recommendations
 
-Suboptimal pricing
-Poor location decisions
-Missed revenue opportunities
-🎯 Key Objectives
-Identify high-demand vs oversupplied neighborhoods
-Analyze pricing dynamics & revenue drivers
-Evaluate guest satisfaction patterns
-Provide strategic recommendations
-🏗️ Project Architecture
-├── data/           # Raw & processed datasets
-├── docs/           # Project documentation & references
-├── notebooks/      # Jupyter notebooks (EDA, cleaning, analysis)
-├── reports/        # Final reports & insights
-├── scripts/        # ETL pipelines & reusable Python scripts
-├── tableau/        # Tableau dashboards & exports
+---
+
+## 🏗️ Project Structure
+
+```
+nyc-airbnb-analytics/
+├── data/                        # Raw & processed datasets
+├── docs/                        # Project documentation & references
+├── notebooks/
+│   ├── 02_cleaning.ipynb        # Data preprocessing
+│   ├── 03_eda.ipynb             # Exploratory analysis
+│   └── 04_statistical_analysis.ipynb  # Hypothesis testing & regression
+├── reports/                     # Final insights & summaries
+├── scripts/
+│   └── etl_pipeline.py          # Automated ETL pipeline
+├── tableau/                     # Tableau dashboards & exports
 ├── .gitignore
-├── README.md
-⚙️ Tech Stack
-Layer	Tools Used
-Data Processing	Python, Pandas, NumPy
-Visualization	Matplotlib, Seaborn, Tableau
-Analysis	Statistical Testing, Regression
-Environment	Jupyter Notebook
-Data Source	Inside Airbnb
-🔄 Data Pipeline (ETL)
-🧹 Data Cleaning
-Standardized column naming conventions
-Missing value imputation (median-based)
-Outlier capping (99th percentile)
-Duplicate removal
-Data type corrections
-⚡ Feature Engineering
-price_tier → segmentation (Budget → Luxury)
-estimated_revenue → revenue proxy
-occupancy_rate → demand indicator
-total_price → real guest cost
-📊 Exploratory Data Analysis (EDA)
-🏙️ Market Insights
-Manhattan + Brooklyn = ~85% supply
-Queens = high-growth opportunity zone
-💰 Pricing Insights
-Avg listing price: $626
-Avg total cost: $751+
-Service fees ≈ 20% of price
-🛏️ Property Trends
-Entire homes dominate (>50%)
-Private rooms → better value segment
-⭐ Review Dynamics
-Bimodal ratings (~2.6 vs ~1.7)
-Indicates quality divide in hosts
-📈 Statistical Analysis
-🔬 Hypothesis Testing
-Instant Booking vs Review Rate
-Result: No significant difference
-👉 Convenience ≠ lower quality
-📉 Regression Analysis
-Positive price trend post-pandemic
-👉 Demand recovery confirmed
-📊 Tableau Dashboards
-1️⃣ Market Overview
-Borough distribution
-Neighborhood demand
-Listing density
-2️⃣ Pricing Intelligence
-Revenue trends
-Price tier segmentation
-Heatmaps
-3️⃣ Guest Experience
-Review distribution
-Cancellation policies
-Host behavior
-💡 Strategic Insights
-🏆 Queens = Best investment opportunity
-⚠️ Brooklyn hotspots = Highly saturated
-📈 Post-pandemic = Price surge
-⚡ Instant booking = Safe to enable
-🔄 Flexible policies = Higher conversions
-🧭 Recommendations
-Priority	Action	Impact
-High	Enable Instant Booking incentives	+10–15% conversions
-High	Expand supply in Queens	Market growth
-Medium	Promote flexible cancellation	Lower vacancy
-Medium	Target budget segment	More bookings
-Medium	Improve low-rated hosts	Better platform quality
-⚠️ Limitations
-Static dataset (no real-time updates)
-No actual booking transactions
-Review bias possible
-Regulatory changes not fully captured
-🔮 Future Enhancements
-🤖 ML-based price prediction (XGBoost)
-📡 Real-time dashboard integration
-🧠 NLP sentiment analysis on reviews
-📊 Regulatory impact modeling
-📂 Key Files & Workflow
-File/Folder	Purpose
-notebooks/02_cleaning.ipynb	Data preprocessing
-notebooks/03_eda.ipynb	Exploratory analysis
-notebooks/04_statistical_analysis.ipynb	Hypothesis testing
-scripts/etl_pipeline.py	Automated pipeline
-tableau/	Dashboard files
-reports/	Final insights
-📌 Business Impact
+└── README.md
+```
 
-This project enables:
+---
 
-📈 Better pricing strategies
-📍 Smarter location targeting
-💰 Increased host revenue
-⭐ Improved guest experience
-🏁 Conclusion
+## ⚙️ Tech Stack
 
-The NYC Airbnb market is:
+| Layer | Tools |
+|-------|-------|
+| Data Processing | Python, Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn, Tableau |
+| Statistical Analysis | Hypothesis Testing, Regression |
+| Environment | Jupyter Notebook |
+| Data Source | [Inside Airbnb](http://insideairbnb.com/) |
 
-Highly concentrated
-Price-sensitive
-Quality-divided
+---
 
-This project transforms raw data into clear, strategic decisions, helping stakeholders maximize ROI in a competitive environment.
+## 🔄 ETL Pipeline
 
-📎 Reference
+### 🧹 Data Cleaning
+- Standardized column naming conventions
+- Missing value imputation (median-based)
+- Outlier capping at the 99th percentile
+- Duplicate removal and data type corrections
 
-Project content derived from full analytical report:
-https://docs.google.com/document/d/1KZJvpFIPW3gtA3Q9yimsABRNF6iLnz477pQkHIO0VfI/edit?usp=sharing
+### ⚡ Feature Engineering
+
+| Feature | Description |
+|---------|-------------|
+| `price_tier` | Segmentation from Budget → Luxury |
+| `estimated_revenue` | Proxy for host revenue potential |
+| `occupancy_rate` | Demand indicator |
+| `total_price` | Real guest cost (base + fees) |
+
+---
+
+## 📊 Key Findings
+
+### 🏙️ Market
+- Manhattan + Brooklyn account for **~85% of supply**
+- Queens is an emerging **high-growth opportunity zone**
+
+### 💰 Pricing
+- Average listing price: **$626**
+- Average total guest cost: **$751+** (service fees ≈ 20%)
+
+### 🛏️ Property Types
+- Entire homes dominate at **>50% of listings**
+- Private rooms offer a **better value** segment
+
+### ⭐ Reviews
+- Bimodal rating distribution (~2.6 vs ~1.7 peaks)
+- Indicates a significant **host quality divide**
+
+---
+
+## 📈 Statistical Analysis
+
+### Hypothesis Testing
+**Instant Booking vs. Review Rate** — Result: No significant difference detected.
+> Enabling instant booking does not negatively impact review quality. Convenience ≠ lower quality.
+
+### Regression Analysis
+**Post-pandemic price trend** — Result: Statistically significant positive trend.
+> Demand recovery is confirmed with prices rising year-over-year since 2021.
+
+---
+
+## 📊 Tableau Dashboards
+
+Three dashboards provide layered business intelligence:
+
+1. **Market Overview** — Borough distribution, neighborhood demand, listing density
+2. **Pricing Intelligence** — Revenue trends, price tier segmentation, geographic heatmaps
+3. **Guest Experience** — Review distribution, cancellation policy analysis, host behavior patterns
+
+---
+
+## 💡 Strategic Recommendations
+
+| Priority | Action | Expected Impact |
+|----------|--------|-----------------|
+| 🔴 High | Enable Instant Booking incentives | +10–15% conversions |
+| 🔴 High | Expand supply in Queens | Market growth opportunity |
+| 🟡 Medium | Promote flexible cancellation policies | Lower vacancy rates |
+| 🟡 Medium | Target the budget price segment | Volume-driven bookings |
+| 🟡 Medium | Identify & improve low-rated hosts | Better platform quality |
+
+---
+
+## ⚠️ Limitations
+
+- Static dataset — no real-time updates
+- No actual booking transaction data
+- Potential review bias from self-selection
+- Regulatory changes not fully captured in the dataset
+
+---
+
+## 🔮 Future Enhancements
+
+- 🤖 ML-based price prediction (XGBoost / LightGBM)
+- 📡 Real-time dashboard integration via API
+- 🧠 NLP sentiment analysis on guest reviews
+- 📊 Regulatory impact modeling
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/nyc-airbnb-analytics.git
+cd nyc-airbnb-analytics
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the ETL pipeline
+python scripts/etl_pipeline.py
+
+# Launch notebooks
+jupyter notebook
+```
+
+---
+
+## 📂 Data Source
+
+Data sourced from [Inside Airbnb](http://insideairbnb.com/) — an independent, non-commercial project providing public Airbnb listing data.
+
+---
+
+## 📎 Full Report
+
+The complete analytical report is available here:
+[📄 View Full Report](https://docs.google.com/document/d/1KZJvpFIPW3gtA3Q9yimsABRNF6iLnz477pQkHIO0VfI/edit?usp=sharing)
+
+---
+
+## 📬 Contact
+
+Have questions or want to collaborate? Feel free to open an issue or reach out via GitHub.
+
+---
+
+*Built with 🧡 using Python, Pandas, and Tableau — transforming raw data into strategic decisions.*
