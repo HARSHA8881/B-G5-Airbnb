@@ -77,27 +77,27 @@ nyc-airbnb-analytics/
 
 ---
 
-## 📊 Key Findings
+##  Key Findings
 
-### 🏙️ Market
+###  Market
 - Manhattan + Brooklyn account for **~85% of supply**
 - Queens is an emerging **high-growth opportunity zone**
 
-### 💰 Pricing
+### Pricing
 - Average listing price: **$626**
 - Average total guest cost: **$751+** (service fees ≈ 20%)
 
-### 🛏️ Property Types
+### Property Types
 - Entire homes dominate at **>50% of listings**
 - Private rooms offer a **better value** segment
 
-### ⭐ Reviews
+### Reviews
 - Bimodal rating distribution (~2.6 vs ~1.7 peaks)
 - Indicates a significant **host quality divide**
 
 ---
 
-## 📈 Statistical Analysis
+##  Statistical Analysis
 
 ### Hypothesis Testing
 **Instant Booking vs. Review Rate** — Result: No significant difference detected.
@@ -109,7 +109,7 @@ nyc-airbnb-analytics/
 
 ---
 
-## 📊 Tableau Dashboards
+## Tableau Dashboards
 
 Three dashboards provide layered business intelligence:
 
@@ -119,7 +119,7 @@ Three dashboards provide layered business intelligence:
 
 ---
 
-## 💡 Strategic Recommendations
+## Strategic Recommendations
 
 | Priority | Action | Expected Impact |
 |----------|--------|-----------------|
