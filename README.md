@@ -109,7 +109,7 @@ nyc-airbnb-analytics/
 
 ---
 
-## Tableau Dashboards
+## [Tableau Dashboards](https://public.tableau.com/app/profile/vaibhav.singh2793/viz/airbnb_capstone_final/Dashboard1?publish=yes)
 
 Three dashboards provide layered business intelligence:
 
